@@ -1,0 +1,22 @@
+syntax = "proto3";
+package test;
+option go_package = "test/pb";
+
+message Test {
+    bool v = 1;
+    string dummy = 2;
+}
+
+message Test2 {
+    optional bool v = 1;
+    string dummy = 2;
+}
+
+message Test3 {
+    BoolValue v = 1;
+    string dummy = 2;
+}
+
+message BoolValue {
+    bool v = 1;
+}
